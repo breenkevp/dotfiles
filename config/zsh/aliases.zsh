@@ -6,6 +6,9 @@ alias igpu='sudo intel_gpu_top'
 
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history | tail -n1 | sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
+# Serve files over HTTP
+alias serve="python3 -m http.server 8000"
+
 # Modern DNF
 alias dnf="dnf5"
 alias dnfgi="dnf5 group install"
